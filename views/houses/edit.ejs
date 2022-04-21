@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit House</title>
+</head>
+<body>
+    <h1>Edit House</h1>
+    <form action="/houses/<%= house._id %>?_method=PUT" method="POST">
+        <div>
+            <label for="owner">Owner</label>
+            <input type="text" id="owner" name="house[owner]" value="<%= house.owner %>">
+        </div>
+        <div>
+            <label for="city">City</label>
+            <input type="text" id="city" name="house[city]" value="<%= house.city %>">
+        </div>
+        <div>
+            <label for="locality">Locality</label>
+            <input type="text" id="locality" name="house[locality]" value="<%= house.locality %>">
+        </div>
+        <button>Update House</button>
+    </form>
+    <a href="/houses/<%= house._id %> ">Back to all house</a>
+</body>
+</html>

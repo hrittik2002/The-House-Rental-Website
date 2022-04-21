@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New House</title>
+</head>
+<body>
+    <form action="/houses" method="POST">
+        <div>
+            <label for="owner">Owner</label>
+            <input type="text" id="owner" name="house[owner]">
+        </div>
+        <div>
+            <label for="city">City</label>
+            <input type="text" id="city" name="house[city]">
+        </div>
+        <div>
+            <label for="locality">Locality</label>
+            <input type="text" id="locality" name="house[locality]">
+        </div>
+        <button>Add House</button>
+    </form>
+    <a href="/houses">Back to All Houses</a>
+</body>
+</html>
